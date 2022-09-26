@@ -29,36 +29,38 @@ namespace FisrstWinFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonFirst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonFirst
             // 
-            this.button1.Location = new System.Drawing.Point(301, 112);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 113);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Przycisk";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonFirst.Location = new System.Drawing.Point(276, 206);
+            this.buttonFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonFirst.Name = "buttonFirst";
+            this.buttonFirst.Size = new System.Drawing.Size(208, 136);
+            this.buttonFirst.TabIndex = 0;
+            this.buttonFirst.Text = "Przycisk";
+            this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 524);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonFirst);
             this.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm1";
             this.Text = "Pierwszy program okienkowy";
+            this.Load += new System.EventHandler(this.MainForm1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFirst;
     }
 }
 
