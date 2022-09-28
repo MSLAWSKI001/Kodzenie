@@ -30,11 +30,12 @@ namespace FisrstWinFormsApp
         private void InitializeComponent()
         {
             this.buttonFirst = new System.Windows.Forms.Button();
+            this.buttonHello = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
             // 
-            this.buttonFirst.Location = new System.Drawing.Point(276, 206);
+            this.buttonFirst.Location = new System.Drawing.Point(73, 193);
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(208, 136);
@@ -43,11 +44,22 @@ namespace FisrstWinFormsApp
             this.buttonFirst.UseVisualStyleBackColor = true;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
+            // buttonHello
+            // 
+            this.buttonHello.Location = new System.Drawing.Point(527, 193);
+            this.buttonHello.Name = "buttonHello";
+            this.buttonHello.Size = new System.Drawing.Size(194, 136);
+            this.buttonHello.TabIndex = 1;
+            this.buttonHello.Text = "Hello";
+            this.buttonHello.UseVisualStyleBackColor = true;
+            this.buttonHello.Click += new System.EventHandler(this.button_Click);
+            // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 524);
+            this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.buttonFirst);
             this.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -61,6 +73,7 @@ namespace FisrstWinFormsApp
         #endregion
 
         private System.Windows.Forms.Button buttonFirst;
+        private System.Windows.Forms.Button buttonHello;
     }
 }
 

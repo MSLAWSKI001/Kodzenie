@@ -28,5 +28,10 @@ namespace FisrstWinFormsApp
         {
             MessageBox.Show("Wiataj w pierwszym programie WinForms");
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
