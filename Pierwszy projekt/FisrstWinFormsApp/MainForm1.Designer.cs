@@ -31,11 +31,13 @@ namespace FisrstWinFormsApp
         {
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonHello = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonFirst
             // 
-            this.buttonFirst.Location = new System.Drawing.Point(73, 193);
+            this.buttonFirst.Location = new System.Drawing.Point(12, 375);
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(208, 136);
@@ -46,7 +48,7 @@ namespace FisrstWinFormsApp
             // 
             // buttonHello
             // 
-            this.buttonHello.Location = new System.Drawing.Point(527, 193);
+            this.buttonHello.Location = new System.Drawing.Point(280, 376);
             this.buttonHello.Name = "buttonHello";
             this.buttonHello.Size = new System.Drawing.Size(194, 136);
             this.buttonHello.TabIndex = 1;
@@ -54,11 +56,29 @@ namespace FisrstWinFormsApp
             this.buttonHello.UseVisualStyleBackColor = true;
             this.buttonHello.Click += new System.EventHandler(this.button_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(51, 123);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(301, 29);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(133, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 524);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.buttonFirst);
             this.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -67,6 +87,7 @@ namespace FisrstWinFormsApp
             this.Text = "Pierwszy program okienkowy";
             this.Load += new System.EventHandler(this.MainForm1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -74,6 +95,8 @@ namespace FisrstWinFormsApp
 
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button buttonHello;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
