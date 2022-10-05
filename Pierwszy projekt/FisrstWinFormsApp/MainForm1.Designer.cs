@@ -31,58 +31,84 @@ namespace FisrstWinFormsApp
         {
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonHello = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.buttonHelloName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
             // 
-            this.buttonFirst.Location = new System.Drawing.Point(12, 375);
+            this.buttonFirst.BackColor = System.Drawing.SystemColors.InfoText;
+            this.buttonFirst.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.buttonFirst.Location = new System.Drawing.Point(68, 423);
             this.buttonFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(208, 136);
             this.buttonFirst.TabIndex = 0;
             this.buttonFirst.Text = "Przycisk";
-            this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.UseVisualStyleBackColor = false;
             this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
             // buttonHello
             // 
-            this.buttonHello.Location = new System.Drawing.Point(280, 376);
+            this.buttonHello.BackColor = System.Drawing.SystemColors.MenuText;
+            this.buttonHello.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonHello.Location = new System.Drawing.Point(376, 423);
             this.buttonHello.Name = "buttonHello";
             this.buttonHello.Size = new System.Drawing.Size(194, 136);
             this.buttonHello.TabIndex = 1;
             this.buttonHello.Text = "Hello";
-            this.buttonHello.UseVisualStyleBackColor = true;
+            this.buttonHello.UseVisualStyleBackColor = false;
             this.buttonHello.Click += new System.EventHandler(this.button_Click);
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(51, 123);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 29);
-            this.textBox1.TabIndex = 2;
+            this.textBoxName.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxName.Location = new System.Drawing.Point(68, 118);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(301, 29);
+            this.textBoxName.TabIndex = 2;
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 21);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.SystemColors.WindowText;
+            this.labelName.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.labelName.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.labelName.Location = new System.Drawing.Point(68, 72);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(155, 43);
+            this.labelName.TabIndex = 3;
+            this.labelName.Text = "Podaj imie:";
+            this.labelName.Click += new System.EventHandler(this.labelName_Click);
+            // 
+            // buttonHelloName
+            // 
+            this.buttonHelloName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonHelloName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonHelloName.Location = new System.Drawing.Point(68, 153);
+            this.buttonHelloName.Name = "buttonHelloName";
+            this.buttonHelloName.Size = new System.Drawing.Size(134, 41);
+            this.buttonHelloName.TabIndex = 4;
+            this.buttonHelloName.Text = "Przywitaj się";
+            this.buttonHelloName.UseVisualStyleBackColor = false;
+            this.buttonHelloName.Click += new System.EventHandler(this.buttonHelloName_Click);
+            this.buttonHelloName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonHelloName_MouseClick);
             // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 524);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1266, 607);
+            this.Controls.Add(this.buttonHelloName);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.buttonFirst);
             this.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(500, 500);
             this.Name = "MainForm1";
             this.Text = "Pierwszy program okienkowy";
             this.Load += new System.EventHandler(this.MainForm1_Load);
@@ -95,8 +121,9 @@ namespace FisrstWinFormsApp
 
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button buttonHello;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Button buttonHelloName;
     }
 }
 

@@ -33,5 +33,21 @@ namespace FisrstWinFormsApp
         {
 
         }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHelloName_MouseClick(object sender, MouseEventArgs e)
+        {
+            string message = "Witaj "+textBoxName.Text+" w tym programie";
+            MessageBox.Show(message);
+        }
+
+        private void buttonHelloName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
