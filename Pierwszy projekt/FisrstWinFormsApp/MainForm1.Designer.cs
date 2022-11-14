@@ -34,6 +34,8 @@ namespace FisrstWinFormsApp
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.buttonHelloName = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxAge = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -64,7 +66,7 @@ namespace FisrstWinFormsApp
             // textBoxName
             // 
             this.textBoxName.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBoxName.Location = new System.Drawing.Point(68, 118);
+            this.textBoxName.Location = new System.Drawing.Point(68, 101);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(301, 29);
             this.textBoxName.TabIndex = 2;
@@ -75,7 +77,7 @@ namespace FisrstWinFormsApp
             this.labelName.BackColor = System.Drawing.SystemColors.WindowText;
             this.labelName.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelName.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.labelName.Location = new System.Drawing.Point(68, 72);
+            this.labelName.Location = new System.Drawing.Point(68, 55);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(155, 43);
             this.labelName.TabIndex = 3;
@@ -86,7 +88,7 @@ namespace FisrstWinFormsApp
             // 
             this.buttonHelloName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonHelloName.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonHelloName.Location = new System.Drawing.Point(68, 153);
+            this.buttonHelloName.Location = new System.Drawing.Point(68, 312);
             this.buttonHelloName.Name = "buttonHelloName";
             this.buttonHelloName.Size = new System.Drawing.Size(134, 41);
             this.buttonHelloName.TabIndex = 4;
@@ -95,11 +97,34 @@ namespace FisrstWinFormsApp
             this.buttonHelloName.Click += new System.EventHandler(this.buttonHelloName_Click);
             this.buttonHelloName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonHelloName_MouseClick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label1.Location = new System.Drawing.Point(68, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 21);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "podaj wiek";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBoxAge
+            // 
+            this.textBoxAge.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxAge.Location = new System.Drawing.Point(68, 239);
+            this.textBoxAge.Name = "textBoxAge";
+            this.textBoxAge.Size = new System.Drawing.Size(100, 29);
+            this.textBoxAge.TabIndex = 6;
+            this.textBoxAge.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // MainForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 607);
+            this.Controls.Add(this.textBoxAge);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonHelloName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxName);
@@ -124,6 +149,8 @@ namespace FisrstWinFormsApp
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Button buttonHelloName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxAge;
     }
 }
 

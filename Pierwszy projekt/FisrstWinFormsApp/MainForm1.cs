@@ -36,7 +36,7 @@ namespace FisrstWinFormsApp
 
         private void labelName_Click(object sender, EventArgs e)
         {
-
+            Environment.Exit(128);
         }
 
         private void buttonHelloName_MouseClick(object sender, MouseEventArgs e)
@@ -46,6 +46,26 @@ namespace FisrstWinFormsApp
         }
 
         private void buttonHelloName_Click(object sender, EventArgs e)
+        {
+            string strAge = textBoxAge.Text;
+            if (string.IsNullOrWhiteSpace(strAge))
+            {
+                Message.Show("Nie podano wieku");
+                return;
+            }
+            int age;
+            if (!int.TryParse(strAge, out age))
+            { 
+                
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
