@@ -50,16 +50,24 @@ namespace FisrstWinFormsApp
             string strAge = textBoxAge.Text;
             if (string.IsNullOrWhiteSpace(strAge))
             {
-                Message.Show("Nie podano wieku");
+                MessageBox.Show("Nie podano wieku");
                 return;
             }
             int age;
             if (!int.TryParse(strAge, out age))
-            { 
-                
+            {
+                MessageBox.Show("Wiek nie jest liczbą");
+                return;
             }
+            string message = "";
+            if (age >= 18)
+                message = "jesteś pełnoletni";
+                
+            else
+                message = "jesteś niepełnoletni";
+            message = "Witaj" + textBoxName.Text + "w tym programie\n" + message;
+            MessageBox.Show(message);
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
